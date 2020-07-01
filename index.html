@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RSG México</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- D3js library -->
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" style="background-color: #bdbdbd;">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top page-scroll" role="navigation">
+       
+            <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container-fluid">
+              <div class="container-fluid rsglogo page-scroll" >
+                <a class="navbar-brand" href="#page-top">
+                  <h1 class="white">RSG - México</h1>
+              </a>
+                <ul class="nav navbar-nav hspace navbar-right">
+                    <li>
+                    <a class="navbar-brand page-scroll" href="#page-top">
+                        <img class="hidden-xs img-responsive" src="images/RSG_logo_transparente_2.png" width="70">
+                    </a>
+                </li>
+                    <li>
+                    <a class="navbar-brand" href="http://www.iscbsc.org/">
+                        <img class="hidden-xs img-responsive page-scroll" src="images/Iscbsc_logo.png" width="180">
+                    </a>
+                </li>
+                <li>
+                    <a class="navbar-brand" href="https://www.iscb.org/">
+                    <img class="hidden-xs img-responsive" src="images/ISCB_logo.png" width="100">
+                    </a>
+                </li>
+            </ul>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="pull-left collapse navbar-collapse page-scroll visible-xs" id="navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a  class="page-scroll" href="#page-top ">EVENTS</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#mex_map">COMPBIO IN MÉXICO</a>
+                    </li>
+                    <li class="dropdown">
+                        <a  class="dropdown-toggle" data-toggle="dropdown">ABOUT US <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="page-scroll" href="#whoweare">WHO WE ARE</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#mission">MISSION</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a  class="dropdown-toggle" data-toggle="dropdown">STAFF <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="page-scroll" href="#about">BOARD MEMBERS</a>
+                            </li>
+                            <li>
+                                <a href="past_board_members.html">PAST BOARD MEMBERS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">RESOURCES <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="page-scroll" href="#learning">LEARNING RESOURCES</a>
+                            </li>
+                            <li>
+                                <a class="page-scroll" href="#other">OTHER SITES</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+<div class="container-fluid" style="background-color: white;">
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="page-header"></div>
+    <div class="row">
+            <div class="col-md-6 col-md-offset-1">
+                <section id="whoweare">
+                    <div class="panel panel-primary custom-hover text-justify" style="background-color:white; padding:15px; margin-left: 2.5%; border-color: #BDBDBD;">
+                        <h3> WHO WE ARE? </h3>
+                            We are a group of students and researchers who aim to bring together the community working on multiple areas of Computational Biology to promote collaboration, exchange of ideas, learning resources, training opportunities, etc. To do so, we collaborate with other groups of the ISCB Student Council to promote interaction among students pursuing research in the field of Bioinformatics and Computational Biology both in México and other parts of the world.
+                        </div>
+                </section>
+
+                <section id="mission">
+                <div class=" panel panel-primary custom-hover text-justify" style="background-color:white; padding:15px; margin-left:2.5%;border-color: #BDBDBD;">
+                <h3 > MISSION </h3>
+                Our mission is to promote the development of the next generation of Computational Biologists in México through encouragement of scientific events, networking opportunities, soft skill training, educational resources and career advice.
+                </div>
+            </section>       
+            </div>
+    <!-- Follow us panel-->
+            <div class="col-md-4 pull-right" style="margin-left: 4%;">
+                <div class="custom-panel panel-default">
+                    <div class="panel-body">
+                      <h4><small><strong><font color="#deebf7">FOLLOW:</font>
+                        <a class="graystyle" href="https://twitter.com/iscb_rsgmx">
+                        <i class="pull-right fa fa-twitter" style="font-size:25px"></i> 
+                        </a>
+                        <i></i>
+                        <a class="graystyle" href="https://www.facebook.com/rsgmexico/?fref=ts">
+                        <i class="pull-right fa fa-facebook" style="font-size:25px"></i>
+                        </a>
+                        </strong></small></h4>
+                    </div>
+                </div>
+                <!--Facebook timeline panel-->
+                <section id="news">
+                 <h3 style="margin-left: 2.5%;"> EVENTS / NEWS </h3>
+                    <div class="panel panel-default " style="border-color: white;">
+                        
+                         <div class="fb-page col-md-offset-2" data-href="https://www.facebook.com/rsgmexico/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-width="500" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/rsgmexico/"><a href="https://www.facebook.com/rsgmexico/">ISCB - RSG Mexico</a></blockquote></div>
+                        </div>
+                    </div>
+                    </section>
+                <div class="jumbotron">
+                 <ul class="list-inline">
+                        <li >
+                        <h4><i class="glyphicon glyphicon-chevron-right" style="color:#08519c;"></i> 
+                        SolBio International Conference 2016 on "Bioinformatics and Computational Biology for Innovative Genomics" 22-26 Apr,2016</h4>
+                        </li>
+                        <li >
+                        <h4><i class="glyphicon glyphicon-chevron-right" style="color:#08519c;"></i> 
+                        More events (comming soon)</h4>
+                        </li>                    
+                    </ul>
+                </div>
+            </div>
+         <!--row-->   
+        </div>
+    
+
+        
+        <div class="row">
+        <!-- Content Row -->
+            <!-- Sidebar Column -->
+            <section id="mex_map">
+            <div class="col-md-8" style="margin-left: 1.5%;">
+                <h3>COMPUTATIONAL BIOLOGY GROUPS IN MÉXICO</h3>
+                <div id="map" class="img-responsive" style="width: 700px; height: 500px;"></div>
+                             <!-- Leaflet map library -->
+                            <script src="https://unpkg.com/leaflet@0.7.2/dist/leaflet.js"></script> 
+                            <!-- <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>-->
+                            <script src="js/leaflet.markercluster.js" type="text/javascript"></script>
+                            <script src="map/geojson_groups.js" type="text/javascript"></script>
+                            <!-- Map section-->
+                            <script>
+                            var map = L.map('map').setView([19.390,-99.4238146], 5);
+                            /*L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                                attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                            }).addTo(map);*/
+                            /*-- Dark style Mapbox--
+                            https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWtyYW1tZW5kZXoiLCJhIjoiY2l0dm5reWRpMDA4ajMzcGxhMzBhMTZsZyJ9.dK-PsL_FSgRKkuoRNpQWeA
+                            ---Light Style Mapbox--
+                            https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWtyYW1tZW5kZXoiLCJhIjoiY2l0dm5reWRpMDA4ajMzcGxhMzBhMTZsZyJ9.dK-PsL_FSgRKkuoRNpQWeA*/
+                            L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYWtyYW1tZW5kZXoiLCJhIjoiY2l0dm5reWRpMDA4ajMzcGxhMzBhMTZsZyJ9.dK-PsL_FSgRKkuoRNpQWeA', {
+                                attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                                maxZoom: 18,
+                            }).addTo(map);
+
+                            var markers = L.markerClusterGroup();
+
+                            function onEachFeature(feature, layer) {
+                                var popupContent = "<b><a href='"+feature.properties.link+"'>"+feature.properties.title+"</a></b>";
+
+                                if (feature.properties && feature.properties.content) {
+                                    popupContent += "<p>"+feature.properties.content;
+                                }
+
+                                layer.bindPopup(popupContent);
+                            }
+
+                            L.geoJson(groups, {
+
+                                style: function (feature) {
+                                    return feature.properties && feature.properties.style;
+                                },
+
+                                onEachFeature: onEachFeature,
+
+                                pointToLayer: function (feature, latlng) {
+                                    return L.marker(latlng, {
+                                        radius: 8,
+                                        fillColor: "#ff7800",
+                                        color: "#000",
+                                        weight: 1,
+                                        opacity: 1,
+                                        fillOpacity: 0.8
+                                    });
+                                }
+                            }).addTo(markers);
+                            map.addLayer(markers);
+                            </script>
+            </div>
+            <div class="col-md-3 panel panel-primary custom-hover text-justify" style="margin-top: 5%; background:#304FFE;">   
+              <h3> <font color="#E8EAF6"> Explore the map:</font></h3>
+             <p> <h4 style="color:#E8EAF6"> Zoom in and click over the markers to get information about Computational Biology Labs in México.</h4><br> <font color="#E8EAF6">Not in the map? <br>Please contact us at:<br></font> <a class="graystyle" href="mailto:rsg-mexico@googlegroups.com">rsg-mexico@googlegroups.com</a>
+              </p>
+            </div>
+            </section>
+
+        </div>
+
+        <!-- /.row -->
+
+ <div class="row" style="padding-top:100px;"> 
+        <section id="learning">
+            <a href="https://iscb-mx.github.io/">
+            <div class="col-md-4 col-md-offset-1 panel panel-default custom-hover text-center" style="background: #76FF03; padding:50px;">
+                <h3 style="color:#212121;"> Learning resources</h3></div></a>
+        </section>
+        <div class="col-md-6 col-md-offset-1">
+        <section id="other">
+        <h3> Other bioinformatics sites </h3>
+            <div class="col-md-4">  <a href="https://www.facebook.com/NNBUNAM/"> <img  class="img-responsive" src="images/NNB.jpg" alt="" width="200">
+            Nodo Nacional de Bioinformática</a></div>
+            <div class="col-md-4"><a href="http://www.soibio.org/en"><img  class="img-responsive" src="images/SoIBio.jpg" alt="" width="100"> SoIBio Sociedad Iberoamericana de Bioinformática</a></div>
+        </section>
+        </div>
+</div> 
+
+<section id="about">
+    <div class="row" style="padding-top:100px;">
+        <h3 style="margin-left:2.5%"> BOARD MEMBERS</h3>
+            <div class="row" >
+
+                <div class="col-md-2" style="margin-left:2.5%">
+                    <img class="circle-avatar img-responsive img-thumbnail " src="images/Lucia.png" alt="" width="125"> 
+                </div>
+            
+                <div class="col-md-3">
+                    <h3><strong>President</strong></h3>
+                    <h4>Lucia Sarahi López Castillo</h4>
+                    <p>Human Systems Biology Lab<br>
+                    National Institute of Genomic Medicine<br>
+                    INMEGEN-UNAM <br>
+                    <a href="mailto:lslopez8992@gmail.com">
+                    <i class="glyphicon glyphicon-envelope" style="font-size:20px"></i>
+                    <span>lslopez8992@gmail.com</span>  
+                    </a><br>
+                    <strong>Area of research/Interests:</strong><br>
+                    Systems Biomedicine, single-cell analysis, NGS technologies, cancer, heterogeneity, networks and pathways analysis.
+                    </p>
+                </div>
+            <!-- </div>-->
+            <!-- Profile: Jenny -->
+            <!-- <div class="row">-->
+            <div class="col-md-2 col-md-offset-1" >
+                <a href="portfolio-item.html">
+                    <img class=" img-responsive img-thumbnail " src="images/Jenny.png" alt="" width="125">
+
+                </a>
+            </div>
+            <div class="col-md-3">
+                <h3><strong>Secretary-Treasurer</strong></h3>
+                <h4>Jennifer Enciso</h4>
+                <p>Unidad de Investigación Médica en Enfermedades Oncológicas<br>
+                    Centro Médico Nacional Siglo XXI, IMSS<br>
+                    Centro de Ciencias de la Complejidad (C3)<br>
+                    
+                <a href="mailto:encisogj@gmail.com">
+                    <i class="glyphicon glyphicon-envelope" style="font-size:20px"></i>
+                    <span>encisogj@gmail.com </span>  
+                </a><br>
+                <strong>Area of research/Interests:</strong><br>
+                Boolean network models, acute lympohoblastic leukemia, hematopoiesis
+                </p>
+            </div>
+        </div>
+        <!-- Profile: Raúl -->
+        <div class="row">
+            <div class="col-md-2" style="margin-left:2.5%">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-thumbnail " src="images/Raul.png" alt="" width="125">
+
+                </a>
+            </div>
+            <div class="col-md-3">
+                <h3><strong>Training and Outreach</strong></h3>
+                <h4>Raúl Alejandro Mejía Pedroza</h4>
+                <p>National Institute of Genomic Medicine<br>
+                   Deparment: Computational Genomics<br>
+                   Lab: Computational Systems Biology / Integrative Genomics<br>
+                   INMEGEN<br>
+                <a href="mailto:r8a8m8p8@riseup.net">
+                    <i class="glyphicon glyphicon-envelope" style="font-size:20px"></i>
+                    <span>r8a8m8p8@riseup.net </span>  
+                </a><br>
+                <strong>Area of research/Interests:</strong><br>
+                Computational Genomics, Health informatics, Human Bioinformatics.
+                </p>
+            </div>
+        <!--</div>  -->
+        <!-- Profile: Mauricio -->
+        <!--<div class="row">-->
+            <div class="col-md-2 col-md-offset-1">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-thumbnail " src="images/Mauricio.jpg" alt="" width="135">
+
+                </a>
+            </div>
+            <div class="col-md-3">
+                <h3><strong>Social Media</strong></h3>
+                <h4>Mauricio Pérez</h4>
+                <p>Laboratorio de Biología Computacional (CompBioLab)<br>
+                   Instituto de Investigaciones Biomédicas, UNAM<br>
+                <a href="mailto:mauricio_pm@ciencias.unam.mx">
+                    <i class="glyphicon glyphicon-envelope" style="font-size:20px"></i>
+                    <span>mauricio_pm@ciencias.unam.mx </span>  
+                </a><br>
+                <strong>Area of research/Interests:</strong><br>
+                Regulatory networks, boolean network models, cell differentiation, hematopoiesis.
+                </p>
+            </div>
+        </div>          
+<!-- Profile: Akram -->
+        <div class="row">
+            <div class="col-md-2" style="margin-left:2.5%">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-thumbnail " src="images/Akram.png" alt="" width="125">
+
+                </a>
+            </div>
+            <div class="col-md-3">
+                <h3><strong>Webmaster</strong></h3>
+                <h4>Akram Méndez</h4>
+                <p>Laboratorio de Biología Computacional (CompBioLab)<br>
+                   Instituto de Investigaciones Biomédicas, UNAM<br>
+                <a href="mailto:akramsharim@gmail.com">
+                    <i class="glyphicon glyphicon-envelope" style="font-size:20px"></i>
+                    <span>akramsharim@gmail.com</span>  
+                </a><br>
+                <strong>Area of research/Interests:</strong><br>
+                Regulatory networks, systems biology, cell differentiation.
+                </p>
+            </div>
+        <!-- </div> -->         
+<!-- Profile: Yalbi -->
+        <div class="col-md-2 col-md-offset-1">
+                    <a href="portfolio-item.html">
+                    <img class="img-responsive  img-thumbnail" src="images/MarianaEsther.jpg" alt="" width="150"> 
+                </a>
+                </div>
+                <div class="col-md-3 ">
+                    <h3><strong>Faculty advisor</strong></h3>
+                    <h4>Mariana Esther Martínez Sánchez</h4>
+                    <p>Lab. Genética Molecular, Desarrollo y Evolución de Plantas. <br>
+                    Instituto de Ecología, UNAM<br>
+                    <a href="mailto:mar.esther23@gmail.com">
+                    <i class="glyphicon glyphicon-envelope" style="font-size:20px"></i>
+                    <span>mar.esther23@gmail.com</span>  
+                    </a><br>
+                    <strong>Area of research/Interests:</strong><br>
+                    Systems Biology, Regulatory Networks, Differentiation and plasticity of CD4+ T lymphocytes.
+                    </p>
+                </div>
+        </div>      
+
+            <div class="row">
+                
+                 <div class="col-md-2 col-md-offset-1"  style="margin-left:2.5%">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-thumbnail " src="images/Yalbi.jpg" alt="" width="150">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <h3><strong>Faculty advisor</strong></h3>
+                <h4>Yalbi Balderas, PhD.</h4>
+                <p>CONACYT-INER<br>
+                <a href="mailto:yalbibalderas@gmail.com">
+                    <i class="glyphicon glyphicon-envelope" style="font-size:20px"></i>
+                    <span>yalbibalderas@gmail.com</span>  
+                </a><br>
+                <strong>Area of research/Interests:</strong><br>
+                Genomics, Bioinformatics, Respiratory diseases.
+                </p>
+            </div>
+        
+                <div class="col-md-2 col-md-offset-1">
+                <a href="portfolio-item.html">
+                    <img class=" img-responsive img-thumbnail " src="images/AleMedina.png" alt="" width="150">
+                </a>
+            </div>
+                 <!-- Profile: Alejandra Medina -->
+            <div class="col-md-3">
+                <h3><strong>Faculty advisor</strong></h3>
+                <h4>Alejandra Medina-Rivera, PhD.</h4>
+                <p>Laboratorio Internacional de Investigación Sobre el Genoma Humano<br>
+                   UNAM, Campus Juriquilla<br>
+                <a href="mailto:medina.alexiel@gmail.com">
+                    <i class="glyphicon glyphicon-envelope" style="font-size:20px"></i>
+                    <span>medina.alexiel@gmail.com</span>  
+                </a><br>
+                <strong>Area of research/Interests:</strong><br>
+                Functional Genomics, Bioinformatics
+                </p>
+            </div>
+            </div>
+            
+        <!--</div> -->
+   
+
+
+        <div class="row">
+            <div class="col-md-2" style="margin-left:2.5%">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-thumbnail " src="images/Collado.jpg" alt=""  width="175">
+                </a>
+            </div>
+            <div class="col-md-3">
+                <h3><strong>Faculty advisor</strong></h3>
+                <h4>Julio Collado-Vides, PhD.</h4>
+                <p>Laboratorio de Biología Computacional<br>
+                    Centro de Ciencias Genomicas, UNAM<br>
+                <a href="mailto:colladojulio@gmail.com">
+                    <i class="glyphicon glyphicon-envelope" style="font-size:20px"></i>
+                    <span>colladojulio@gmail.com</span>  
+                </a><br>
+                <strong>Area of research/Interests:</strong><br>
+                Computational Genomics, Bioinformatics, Systems Biology
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+
+</div>
+
+       <!-- Footer -->
+        <footer class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid">
+                <section id="contact">
+                <div class="row">
+                      <div class="col-md-1 col-md-offset-7" style="padding-top:30px;">
+                    <a class="graystyle" href="https://twitter.com/iscb_rsgmx">
+                                    <i class="pull-right fa fa-twitter" style="font-size:40px"></i> 
+                                    </a>
+                                <div class="col-md-1">
+                                    <a class="graystyle" href="https://www.facebook.com/rsgmexico/?fref=ts">
+                                    <i class="pull-right fa fa-facebook" style="font-size:40px"></i>
+                                    </a></div>
+                    </div>
+        <div class="col-md-4 col-md-offset-7 text-justify">
+        <h3 style="color:#deebf7">CONTACT <i class="glyphicon glyphicon-envelope" style="color:#deebf7"></i> </h3>
+        <p> <h3><small>Get involved and exchange your ideas with us  and other students making computational biology in México and around the world. If you want to participate, share information about projects, tools, courses, etc., or want to organize an event, please contact us at:<br>  
+        <a  href="mailto:rsg-mexico@googlegroups.com"> <span> rsg-mexico@googlegroups.com</span> 
+        </a></small></h3>
+        </p>
+        </div>
+        </section>
+        <div class="pull-right">
+                    <p style="padding-top:10px;"><font color="#deebf7">Copyright &copy; RSG Méx 2016</font></p>
+                </div>
+                </div>
+            </div>
+        </footer>
+ 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Scrolling -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+
